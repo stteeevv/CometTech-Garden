@@ -1,3 +1,4 @@
+# This script sends an email to users of every plot that has a humidity level below 30% at a specific time of the day.
 import boto3
 from datetime import datetime
 from email.mime.text import MIMEText
