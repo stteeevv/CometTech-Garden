@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* Base Styles */
+.container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.header {
+    background-color: #83A66D;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    align-items: center; 
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.iconHeader {
+  width: 20px;             /* Set desired width */
+  height: 20px;            /* Set desired height */
+  margin-right: 5px;       /* Space between icon and text */
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.imageBox {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+}
+.imageBox2 {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+}
+
+.imageBox img {
+    max-width: 80%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.textContent {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.footer {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Spread content */
+  flex-wrap: wrap; /* Allow wrapping for mobile */
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.footerLinksContainer {
+  display: flex;
+  flex-direction: row; /* Default: Links in a row */
+  gap: 20px; /* Space between links */
+}
+
+.titles {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 20px;
+}
+
+/* Social Media Icons */
+.socialIcons {
+  list-style: none;
+  display: flex;
+  flex-direction: row; /* Icons in a row */
+  gap: 15px; /* Space between icons */
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.socialIconItem {
+  font-size: 24px; /* Icon size for touch compatibility */
+}
+
+.socialIconLink {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+}
+
+/* Underlined Links */
+.underlined-link {
+    text-decoration: underline;
+    color: black;
+}
+
+.underlined-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbarContainer {
+    background-color: #83A66D; /* Set background color to match */
+}
+
+/* Navbar Default Styles */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 5px;
+    background-color: #83A66D;
+    font-family: 'jetBrains Mono', monospace;
+}
+
+/* Hamburger Button for Mobile */
+.menuToggle {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    font-size: 30px; /* Adjust size as needed */
+    color: #fff;
+    cursor: pointer;
+    z-index: 50; /* Make sure it's above other elements */
+}
+
+/* Navbar Links */
+.navLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.navButton {
+    text-align: center;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    display:flex;
+    flex-direction:row;
+    font-family: 'jetBrains Mono', monospace;
+}
+
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 768px) {
+    /* Show Hamburger Button */
+    .menuToggle {
+        display: block; /* Show on mobile */
+        /* position: absolute;
+        top: 10px;
+        left: 10px; Position the button */
+    }
+
+    /* Navbar Links for Small Screens */
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        background-color: #83A66D;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Full height for the mobile menu */
+        justify-content: center;
+        align-items: center;
+        display: none; /* Hide by default */
+        z-index: 30;
+    }
+
+    /* Show Navbar Links when menu is open */
+    .navLinks.active {
+        display: flex;
+    }
+
+    .navButton {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 16px;
+        font-family: 'jetBrains Mono', monospace;
+    }
+
+    .navButton:hover {
+        background-color: #005bb5;
+    }
+
+  .main {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    margin: 10px;
+  }
+
+  .imageBox {
+    margin-right: 0; /* Remove right margin for centered layout */
+    margin-bottom: 15px;
+    align-items: center;
+  }
+
+  .imageBox2 {
+    place-content: center; /* Remove right margin for centered layout */
+    margin-bottom: 15px;
+    width: 80%;
+  }
+
+  .textContent {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .titles {
+    font-size: 20px;
+  }
+
+  .footer {
+    flex-direction: column; /* Stack footer items */
+    text-align: center;
+    padding: 15px;
+}
+
+.footerLinksContainer {
+    margin: 0 auto;
+    gap: 10px;
+}
+
+/* Social Media Icons */
+.socialIcons {
+    justify-content: center;
+    gap: 10px;
+}
+}

@@ -1,0 +1,37 @@
+{
+  "name": "garden-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.662.0",
+    "@aws-sdk/client-s3": "^3.685.0",
+    "@ionic/react": "^8.3.2",
+    "@qiuz/react-image-map": "^1.1.8",
+    "aws-sdk": "^2.1691.0",
+    "chart.js": "^4.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "chart.js": "^4.4.5",
+    "ionicons": "^7.4.0",
+    "next": "14.2.11",
+    "next-auth": "^4.24.8",
+    "react": "^18",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18",
+    "react-img-mapper": "^1.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/react": "18.3.11",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.11",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}

@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap");
+
+.darkGreenCont {
+  width: 95vw; /* Equivalent to w-[90vw] */
+  height: 45vw;
+  background-color: #d9d9d9; /* Equivalent to bg-[#FFDAAF] */
+  margin: 2vw; /* Adjusted from 3rem to vw (3rem ≈ 15vw) */
+  margin-top: 3vw; /* Adjusted from 40rem to vw (40rem ≈ 8vw) */
+  padding: 5vw; /* Adjusted from 2rem to vw (2rem ≈ 5vw) */
+  padding-top: 8vw; /* Adjusted from 4rem to vw (4rem ≈ 8vw) */
+  position: center; /* Same as relative */
+  border-radius: 15px; /* Equivalent to rounded-[15px] */
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+
+.header {
+  background-color: #83a66d;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  align-items: left;
+}
+
+.pottedPlant {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+
+.xyz {
+  background-color: #ffdaaf;
+  top: 12%;
+  left: 8%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  z-index: 2;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.jetbrains {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 2.5vw;
+  text-shadow: -0.6px -0.6px 0px black, 0.6px -0.6px 0px black,
+    -0.6px 0.6px 0px black, 0.6px 0.6px 0px black; /* Stroke effect */
+  letter-spacing: 0.5px;
+}
+
+.titles {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: jetbrains mono;
+}
+
+.textContent {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-family: JetBrains Mono;
+}
+
+.heading_stats {
+  font-family: JetBrains Mono;
+  font-weight: bold;
+  font-size: 2vh;
+}
+.heading_stats_num {
+  font-family: JetBrains Mono;
+  font-weight: bold;
+  font-size: 4vh;
+}

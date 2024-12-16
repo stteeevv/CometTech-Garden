@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Jetbrains mono;
+}
+
+.nav{
+    background-color: #83A66D;
+    width: 20vm;
+}
+
+.header{
+    background-color: #83A66D;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    align-items: left; 
+    font-family: JetBrains Mono;
+    font-size: 15px;
+}
+
+.main{
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.imageBox {
+    margin-right: 20px;
+}
+
+.textContent {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: JetBrains Mono;
+}
+
+.footer {
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  font-family: 'JetBrains Mono', monospace; /* Use quotes for the font name */
+  display: flex;
+  align-items: flex-start; /* Correct for aligning content to the start */
+  flex-direction: column;  /* Correct for flex direction */
+}
+
+.footerhome {
+    justify-content: space-between;
+}
+
+.titles {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: jetbrains mono;
+    
+}
+
+/*SOCIAL MEDIA DECOR*/
+
+.socialIcons {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    /*width: 200px;*/
+
+    gap: 1rem;
+    padding: 0;
+  }
+  
+  .socialIconItem {
+    display: inline-block;
+  }
+  
+  .socialIconLink {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px; /* Adjust size as needed */
+  }
+  /*LINKS DECOR*/
+
+  .underlined-link {
+    text-decoration: underline; /* Ensure underline is present */
+    color: black; /* Set the default color */
+  }
+  
+  .underlined-link:hover {
+    color: blue; /* Change color on hover */
+    text-decoration: underline; /* Keep the underline on hover */
+  }
+
+  /*MENU OH HELP, ABOUT US, MAP*/ 
+
+  

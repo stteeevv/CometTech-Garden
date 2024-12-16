@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+.imageBox {
+    margin-right: 20px;
+}
+
+.textContent {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: JetBrains Mono;
+}
+
+.footer {
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  font-family: 'JetBrains Mono', monospace; /* Use quotes for the font name */
+  display: flex;
+  align-items: flex-start; /* Correct for aligning content to the start */
+  flex-direction: column;  /* Correct for flex direction */
+}
+
+.footerhome {
+    justify-content: space-between;
+}
+
+.titles {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: jetbrains mono;   
+}
+
+
+
+/*SOCIAL MEDIA DECOR*/
+
+.socialIcons {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    /*width: 200px;*/
+
+    gap: 1rem;
+    padding: 0;
+  }
+  
+  .socialIconItem {
+    display: inline-block;
+  }
+  
+  .socialIconLink {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px; /* Adjust size as needed */
+  }
+  /*LINKS DECOR*/
+
+  .underlined-link {
+    text-decoration: underline; /* Ensure underline is present */
+    color: black; /* Set the default color */
+  }
+  
+  .underlined-link:hover {
+    color: blue; /* Change color on hover */
+    text-decoration: underline; /* Keep the underline on hover */
+  }
+
+  /*MENU OH HELP, ABOUT US, MAP*/ 
+/* Accordion item styles */
+.accordionItem {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .accordion {
+    margin-top: 20px;
+  }
+  
+  /* Question styling */
+  .question {
+    font-size: 18px;
+    font-family: 'JetBrains Mono', monospace;
+    cursor: pointer;
+    display: flex;
+  }
+  
+  /* Initially hide the answer */
+  .answer {
+    display: none;  /* Hide answers by default */
+    margin-bottom: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    color: #555;
+    margin-left: 0.63cm;
+  }
+  
+  /* Show the answer when 'show' class is added */
+  .answer.show {
+    display: block;
+  }
+  
+  .arrow {
+    transition: transform 0.3s;
+    height:fit-content;
+    padding-right: 10px;
+  }
+  
+  /* Rotate the arrow when the answer is shown */
+  .arrow.rotate {
+    transform: rotate(180deg);
+  }
+  
+/*  quick links */
+/* Quick Links Section */
+/* Quick Links Section */
+.quicklinks {
+  display: flex; /* Enables flex layout */
+  flex-wrap: wrap; /* Allows wrapping of items to a new row if they don't fit */
+  gap: 10px; /* Adds space between items */
+  font-family: 'JetBrains Mono', monospace; /* Use quotes for the font name */
+  padding-top: 20px;
+
+}
+
+/* Individual Quick Link Boxes */
+.quicklinkitem {
+  flex: 1 1 calc(33.333% - 20px); /* Each box takes up one-third of the width */
+  min-width: 200px; /* Prevent boxes from becoming too narrow */
+  background-color: #D2E4B699;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-family: 'JetBrains Mono', monospace; /* Use quotes for the font name */
+
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quicklinkitem {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+}
